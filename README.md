@@ -8,6 +8,9 @@ In this project you will be developing algorithms for controlling a swarm of Sph
 
 Sphero robots are simulated in Stage as simple omni-directional points (actually squares, but the shape is not important) without mass. This means that they have no inertia, i.e., they can achieve the commanded velocity instantly. Desired velocities are commanded by sending a [geometry_msgs/Twist](http://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/Twist.html) message on `robot_x/cmd_vel` topic where `x` is the number of the robot in simulation (0, 1, 2, ...). At the same time, the simulator is continuously streaming positions and velocities of the robots on topic `robot_x/odom` of type [nav_msgs/Odometry](http://docs.ros.org/en/noetic/api/nav_msgs/html/msg/Odometry.html).
 
+## Reporting problems
+If you encounter an error that you can't solve yourself or get stuck on some step of the simulation, please open an [Issue](https://github.com/larics/mrs_course/issues) in this repository. Specify your operating system and method of installation, describe your problem, and include the entire output of the command that resulted in error. This will be the quickest way to get feedback and will help other students who may encounter the same error in the future.
+
 ## Installation
 There are two ways you can set up your computer to run the simulation:
 
