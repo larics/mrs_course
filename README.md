@@ -1,3 +1,5 @@
+&#8598; Click in the upper left corner for Table of Contents
+
 # FER - MRS Course Project
 Dear students, welcome to the Multi-Robot Systems course. These instructions will help you set up everything needed for the project you will be working on as a part of the course requirements.
 
@@ -121,3 +123,10 @@ Now that you have the simulator ready, you can try to move the robots in it. Tak
 As explained in the Bonus section about Tmuxinator, switching between windows is achieved by holding down `Ctrl` key and pressing arrow keys. If you want to send commands to the robot, one of middle the panels (terminals) must be selected.
 
 Move the robot forwards and backwards with keys `i` and `<`. Rotate left and right with `j` and `l`. For the holonomic mode (strafing), hold down the `Shift` button and press `i`, `<`, `j` or `l`. Try out other keys as well and see what they do.
+
+## Working on your project
+The [sphero_stage](https://github.com/larics/sphero_simulation/tree/master/sphero_stage) package is the main package you will be using for setting up and starting your simulation environment. Detailed instructions are available there.
+
+For developing your solution, create a new package. You can write your code in Python or C++.
+
+More packages will be made available as needed, including the instructions on how to use them.
