@@ -113,6 +113,7 @@ Have fun.
 Plug in webcam USBs to your laptop. Watch out for their order. The camera which is connected first will get a lower index.  
 Note the camera access paths by looking at `ls /dev/video*`.  
 If needed, modify the config file in `sphero_localization` (the north camera must be first in the list).  
+Line up the Sphero(s) with the fixed coordinate frame - by default, y is pointing towards north and x towards east, with origin in the lower left corner (south-west).  
 Instead of the joystick launch file, run `roslaunch sphero_bringup webcam_joystick.launch`
 
 ### 4) Your solution.
