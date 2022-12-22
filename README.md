@@ -3,6 +3,10 @@
 # FER - MRS Course Project
 Dear students, welcome to the Multi-Robot Systems course. These instructions will help you set up everything needed for the project you will be working on as a part of the course requirements.
 
+| :information_source: Second part of the project |
+|:---------------------------|
+| For instructions about the second part of the project, go [here](README_2nd_part.md). |
+
 ## Intro
 In this project you will be developing algorithms for controlling a swarm of Sphero robots, but first, everything will be done in simulation. You are going to use a simple 2D simulator [Stage](https://github.com/rtv/Stage), and specifically, it's bindings to the Robot Operating System (ROS) [stage_ros](http://wiki.ros.org/stage_ros).
 
