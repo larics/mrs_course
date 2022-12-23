@@ -22,7 +22,7 @@ cd docker_files/ros-noetic/mrs_course_project
 git pull
 ```
 
-Build a Docker image. We have intentionally renamed the image to be different from the first part, but you can use the same name if'd like. **Be careful**, by doing so, you might lose the original image.
+Build a Docker image. We have intentionally renamed the image to be different from the first part, but you can use the same name if you'd like (you will also need to modify the first_run script in that case). **Be careful**, by doing so, you might lose the original image.
 ```bash
 docker build -t mrs_project_img_2:latest .
 ```
