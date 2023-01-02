@@ -51,7 +51,7 @@ To remove the image: `docker rmi <image name>`
 ### 2) Manual installation (if you already have ROS installed)
 > We are assuming that you have ROS Noetic installed.
 
-> Also note: this will **not** work with an existing docker container.
+> Also note: manually installing packages in the existing docker container will **not** work - there are additional steps included while building the new image.
 
 Prerequisites on Ubuntu packages:
 ```bash
