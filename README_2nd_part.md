@@ -71,7 +71,8 @@ Prerequisites on ROS packages:
 ```bash
 sudo apt install -y \
     ros-${ROS_DISTRO}-joy \
-    ros-${ROS_DISTRO}-rviz
+    ros-${ROS_DISTRO}-rviz \
+    ros-${ROS_DISTRO}-twist-mux
 ```
 
 Prerequisites on Python packages:
