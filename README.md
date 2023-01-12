@@ -7,6 +7,10 @@ Dear students, welcome to the Multi-Robot Systems course. These instructions wil
 |:---------------------------|
 | For instructions about the second part of the project, go [here](README_2nd_part.md). |
 
+| :warning: Dealing with problems |
+|:---------------------------|
+| If you encounter an error or a problem during installation, first check out the Issues tab, maybe the problem has already been solved. If not, create a new issue and/or contact us. |
+
 ## Intro
 In this project you will be developing algorithms for controlling a swarm of Sphero robots, but first, everything will be done in simulation. You are going to use a simple 2D simulator [Stage](https://github.com/rtv/Stage), and specifically, it's bindings to the Robot Operating System (ROS) [stage_ros](http://wiki.ros.org/stage_ros).
 
