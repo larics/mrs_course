@@ -33,7 +33,7 @@ Very briefly, Docker is a tool that provides a simple and efficient way to pack 
 Basic information about Docker and its main concepts can be found [here](https://github.com/larics/docker_files/blob/master/Introduction.md), while more detailed instructions and troubleshooting are available [here](https://github.com/larics/docker_files). Of course, you can also take a look at the [official website](https://www.docker.com/). Don't follow any instructions from these links just yet. They are provided as a general overview and reference you can use in the future. Detailed step-by-step instructions are given below.
 
 #### Prerequisites
-You must have Ubuntu OS installed on your computer. Ideally, this would be Ubuntu 20.04, but another version should work as well.
+You must have Ubuntu OS installed on your computer. Ideally, this would be Ubuntu 20.04, but another version should work as well. If you have an NVIDIA GPU, please follow [these instructions](https://github.com/larics/docker_files/tree/master#gpu-support) to prepare for Docker installation.
 
 #### Step-by-step instructions
 Follow these [instructions](https://docs.docker.com/engine/install/ubuntu/) to install the Docker engine.
