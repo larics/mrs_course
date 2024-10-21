@@ -25,10 +25,10 @@ There are two ways you can set up your computer to run the simulation:
 ### 1) Docker installation (recommended)
 Very briefly, Docker is a tool that provides a simple and efficient way to pack everything needed for a specific application in one container. You can also look at it as a lightweight virtual machine running on your computer.
 
-Basic information about Docker and its main concepts can be found [here](https://github.com/larics/docker_files/blob/master/Introduction.md), while more detailed instructions and troubleshooting are available [here](https://github.com/larics/docker_files). Of course, you can also take a look at the [official website](https://www.docker.com/). Don't follow any instructions from these links just yet. They are provided as a general overview and reference you can use in the future. Detailed step-by-step instructions are given below.
+Basic information about Docker and its main concepts can be found [here](https://github.com/larics/docker_files/wiki). Of course, you can also take a look at the [official website](https://www.docker.com/). Don't follow any instructions from these links just yet. They are provided as a general overview and reference you can use in the future. Detailed step-by-step instructions are given below.
 
 #### Prerequisites
-You must have Ubuntu OS installed on your computer. Ideally, this would be Ubuntu 20.04, but another version should work as well. If you have an NVIDIA GPU, please follow [these instructions](https://github.com/larics/docker_files/tree/master#gpu-support) to prepare for Docker installation.
+You must have Ubuntu OS installed on your computer. Ideally, this would be Ubuntu 20.04, but another version should work as well. If you have an NVIDIA GPU, please follow [these instructions](https://github.com/larics/docker_files/wiki/2.-Installation#gpu-support) to prepare for Docker installation.
 
 #### Step-by-step instructions
 Follow these [instructions](https://docs.docker.com/engine/install/ubuntu/) to install the Docker engine.
@@ -54,7 +54,7 @@ cd mrs_project
 Clone the repository with Dockerfile in your new directory and position yourself in the correct folder.
 ```bash
 git clone https://github.com/larics/docker_files.git
-cd docker_files/ros-noetic/mrs_course_project
+cd docker_files/ros/ros-noetic/mrs_course_project
 ```
 
 Build a Docker image. You will see a lot of output. Wait until it's done.
