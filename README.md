@@ -48,14 +48,7 @@ To avoid having to do this every time, we can add that command to our `.profile`
 echo "xhost +local:docker > /dev/null" >> ~/.profile
 ```
 
-Now, let's prepare the Docker container that will be used for the project. First, create an empty directory on your computer and position yourself inside of it.
-```bash
-# Assuming you are in your home folder
-mkdir mrs_project
-cd mrs_project
-```
-
-Clone this repository in your new directory and position yourself in the correct folder.
+Now, let's prepare the Docker container that will be used for the project. First, clone this repository in your home or any other preferred directory and position yourself in the correct folder.
 ```bash
 git clone https://github.com/larics/mrs_simulation.git
 cd mrs_simulation/docker

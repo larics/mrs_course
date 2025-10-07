@@ -72,7 +72,7 @@ RUN mkdir -p ${ROS2_WS}/src
 WORKDIR ${ROS2_WS}/src
 RUN git clone https://github.com/tuw-robotics/Stage.git
 RUN git clone https://github.com/tuw-robotics/stage_ros2.git
-RUN --mount=type=ssh git clone git@github.com:larics/sphero_simulation.git
+RUN git clone https://github.com/larics/sphero_simulation.git
 
 # Build ROS2 workspace
 RUN rosdep update
