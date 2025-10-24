@@ -1,0 +1,58 @@
+# ./example.yml
+
+name: example
+root: ~/
+
+# Optional tmux socket
+# socket_name: foo
+
+# Note that the pre and post options have been deprecated and will be replaced by
+# project hooks.
+
+# Project hooks
+# Runs on project start, always
+# on_project_start: command
+# Run on project start, the first time
+# on_project_first_start: command
+# Run on project start, after the first time
+# on_project_restart: command
+# Run on project exit ( detaching from tmux session )
+# on_project_exit: command
+# Run on project stop
+# on_project_stop: command
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+# startup_window: editor
+
+# Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
+# startup_pane: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+windows:
+  - controls:
+      layout: f80a,239x57,0,0[239x28,0,0{119x28,0,0,0,119x28,120,0,2},239x28,0,29{59x28,0,29,3,59x28,60,29,5,59x28,120,29,4,59x28,180,29,6}]
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
+      panes:
+        - ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r __ns:=/robot_0
+        - ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r __ns:=/robot_1
+        - ros2 topic echo /robot_0/odom nav_msgs/msg/Odometry --field pose.pose.position
+        - ros2 topic echo /robot_0/odom nav_msgs/msg/Odometry --field twist.twist.linear
+        - ros2 topic echo /robot_1/odom nav_msgs/msg/Odometry --field pose.pose.position
+        - ros2 topic echo /robot_1/odom nav_msgs/msg/Odometry --field twist.twist.linear
+  - background:
+      layout: tiled
+      panes:
+        - ros2 launch sphero_stage start.launch.py start_rviz:=True

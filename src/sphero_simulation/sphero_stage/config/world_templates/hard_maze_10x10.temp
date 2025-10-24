@@ -1,0 +1,12 @@
+include "definitions.inc"
+
+# load an environment bitmap
+floorplan
+(
+	name "hard_maze_10x10"
+	bitmap "../maps/hard_maze_10x10/hard_maze_10x10.bmp"
+	size [10 10 1]  # duzina sirina visina
+	pose [ 0 0 0 0 ]
+)
+
+# throw in robots

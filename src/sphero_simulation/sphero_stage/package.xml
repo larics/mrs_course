@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>sphero_stage</name>
+  <version>2.0.0</version>
+  <description>A simple package for Sphero robot simulation in Stage simulator</description>
+  <maintainer email="marko.krizmancic@fer.hr">root</maintainer>
+  <license>TODO: License declaration</license>
+
+  <!-- ROS 2 dependencies -->
+  <depend>rclpy</depend>
+  <depend>stage_ros2</depend>
+  <depend>nav2_map_server</depend>
+  <depend>nav2_lifecycle_manager</depend>
+  <depend>tf2_ros</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>rviz2</depend>
+  <depend>sphero_description</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
